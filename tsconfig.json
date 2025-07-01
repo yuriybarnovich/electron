@@ -9,7 +9,7 @@
     ],
     "sourceMap": true,
     "experimentalDecorators": true,
-    "strict": true,
+    "strict": false,
     "baseUrl": ".",
     "allowJs": true,
     "noUnusedLocals": true,
