@@ -10,7 +10,7 @@ const webFrameMainBinding = process._linkedBinding('electron_browser_web_frame_m
 const addReplyToEvent = (event: Electron.IpcMainEvent) => {
   const { processId, frameId } = event;
   event.reply = (channel: string, ...args: any[]) => {
-    event.sender.sendToFrame([processId, frameId], channel, ...args);
+    event.;
   };
 };
 
