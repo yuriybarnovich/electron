@@ -17,7 +17,6 @@ class Value;
 }  // namespace v8
 
 namespace blink {
-struct CloneableMessage;
 }
 
 namespace electron {

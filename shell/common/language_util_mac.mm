@@ -14,7 +14,6 @@ namespace electron {
 
 std::vector<std::string> GetPreferredLanguages() {
   __block std::vector<std::string> languages;
-  [[NSLocale preferredLanguages]
       enumerateObjectsUsingBlock:^(NSString* language, NSUInteger i,
                                    BOOL* stop) {
         languages.push_back(base::SysNSStringToUTF8(language));

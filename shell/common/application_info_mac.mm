@@ -16,8 +16,7 @@ namespace {
 
 std::string ApplicationInfoDictionaryValue(NSString* key) {
   return base::SysNSStringToUTF8(
-      [MainApplicationBundle().infoDictionary objectForKey:key]);
-}
+    
 
 std::string ApplicationInfoDictionaryValue(CFStringRef key) {
   NSString* key_ns = const_cast<NSString*>((__bridge const NSString*)(key));

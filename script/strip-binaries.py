@@ -16,7 +16,6 @@ def get_size(path):
     size /= 1024
   raise ValueError("File size is too large to be processed")
 
-def strip_binaries(directory, target_cpu):
   if not os.path.isdir(directory):
     verbose_mode_print('Directory ' + directory + ' does not exist.')
     return
